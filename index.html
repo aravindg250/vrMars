@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>The Mars Mission</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://css.gg/css?=|facebook|instagram|twitter|google" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/bd60a4fe5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style3.css">
+</head> 
+
+<body>
+
+    
+    <section class="header">
+
+        <!-- Transparent nav bar + light/mars mode switch-->
+        <nav>
+            <a href="index.html"><img src="logochange.png" id="logo-text"></a>
+            <div class="nav-links">
+                <ul>
+                  <li><a href="eventSummary.html" id="line">EVENT SCHEDULE</a></li>
+                  <li><a href="card.html" id="line">MEET THE ASTRONAUTS</a></li>
+                  <li><a href="funFact.html" id="line">FUN FACTS</a></li>
+                  <li><a href="sources.html" id="line">SOURCES</a></li>
+                    <li><main class="main" id="book-now">
+                      <div class="btn-wrapper">
+                        <a href="firebase.html">
+                        <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                      </a>
+                      </div>
+                  </main></li>
+                </ul>
+            </div>
+
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href ="index.html">Home</a>
+                <a href="eventSummary.html">Event Schedule</a>
+                <a href="card.html">Meet the Astronauts</a>
+                <a href="funFact.html">Fun Facts</a>
+                <a href="sources.html">Sources</a>
+                <div class="btn-wrapper">
+                  <a href="firebase.html">
+                  <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="openNav();">
+              <path
+                    class="line top"
+                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+              <path
+                    class="line middle"
+                    d="m 30,50 h 40" />
+              <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+
+        </nav>
+        
+        <!--Opening text for main page-->
+        <div class="text-box">
+            <h1>Experience Mars</h1>
+            <p>Use Live Virtual Reality To Experience Mars With Actual Astronauts</p>
+        </div>
+
+        <!--Bobbing arrow animation-->
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="banner">
+            <canvas id="canvas"></canvas>
+        </div>
+    </section>
+
+    <section class="eventDes scrollTo">
+      <h1>What is VR Mars?</h1>
+      <ul>
+        <li><i class="fa-light fa-rocket-launch"></i> VR Mars is an event where the people of Earth can experience Mars through live virtual reality.</li>
+        <li><i class="fa-light fa-rocket-launch"></i> In this tour you will get an immersive experience and will be able to see the surface of Mars as well as notable landmarks.</li>
+        <li><i class="fa-light fa-rocket-launch"></i> Our knowledgeable astronaut crew will also explain their daily routines and show you around their base so you will be able to experience the red planet from the comfort of your home.</li>
+      </ul>
+
+    </section>
+
+    <!--Destinations-->
+    <section class="destination">
+        <h1>Hot Destinations</h1>
+        <p>Here are some cool locations you can explore during your virtual reality visit!</p>
+
+        <div class="row">
+            <!--Olympus Mons-->
+            <div class="destination-col">
+                <img src="main-mons.jpg">
+                <div class="layer">
+                    <h3>OLYMPUS MONS</h3>
+                </div>
+            </div>
+            <!--Largest Canyon in Solar System-->
+            <div class="destination-col">
+                <img src="Mars-canyon.png">
+                <div class="layer">
+                    <h3>VALLES MARINERIS<br> CANYON</h3>
+                </div>
+            </div>
+            <!--Ghost Dunes-->
+            <div class="destination-col">
+                <img src="mars-space-dunes.png">
+                <div class="layer">
+                    <h3>GHOST DUNES</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!--Links to informational pages on website-->
+    <section class="linker">
+        <h1>Learn More</h1>
+        <p>Mars has lots to offer! Click on the images to learn more!</p>
+
+        <div class="row">
+            <div class="linker-col">
+                <a href="eventSummary.html"><img src="tourism-main.jfif"></a>
+                <h3>Event Info</h3>
+                <p>The food here at Mars is the best in the solar system! Also, be sure to check out our crazy amusement parks and beautiful blue sunsets!</p>
+            </div>
+            <div class="linker-col">
+                <a href="card.html"><img src="history-main.png"></a>
+                <h3>Meet Our Astronauts</h3>
+                <p>We have 6 qualified astronauts who will educate explorers about Martian landmarks and their daily routines. Learn more about each individual and why they’re the perfect astronaut to guide you through your Martian experience.</p>
+            </div>
+            <div class="linker-col">
+                <a href="funFact.html"><img src="geography-main-2.png"></a>
+                <h3>Fun Facts</h3>
+                <p>It has taken tons of time and energy to transform Mars into the Red planet it is today. Its climate, geology, and orbit are nothing like Earth.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Reviews of Mars by Citizens-->
+    <section class="testimonials">
+        <h1>A Word From Our Sponsors</h1>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="JackC.jpg" class="pfp">
+                <div>
+                    <p>I am incredibly proud and excited to be a part of this one of a kind Martian experience. I truly admire these astronauts for taking their time to educate the younger generation about space and humanity’s future on Mars.</p>
+                    <h3>John Clausing - Founder of Clausing Construction</h3>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="testimonial-col">
+                <img src="kliu.jpg" class="pfp">
+                <div>
+                    <p>I am extremely thankful to be a part of the Red Planet experience. This is a unique experience as its immersiveness makes you truly feel that you’re walking around on Mars. The best part about these tours is that they are fun and will make younger generations realize the importance of Mars. </p>
+                    <h3>Kevin Liu - CEO of Liu Life Sciences</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Button linking to travel packages page-->
+    <section class="cta">
+        <h1>Learn About Our Future On Mars</h1>
+        <a href="firebase.html" class="hero-btn">Sign Up Now</a>
+    </section>
+    
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How do I sign up?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>To sign up for VR Mars, check out our website <a href="firebase.html" style="color: #ff5500">Sign Up</a> page, where you will be asked your email and name. On the day of the event you will be sent a link to the VR tour.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Who can attend?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Anyone who is curious about Mars can attend this virtual tour. Users can connect their phones to the VR headsets and simply experience the tour through screens. For optimal viewing pleasure an oculus is recommended but VR mars is compatible with both smartphones and tablets. 
+                </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Who is hosting the tour?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>The tour is hosted by Expedition Mars. On your tour you will be accompanied by one of the members of our experienced astronaut crew who happen to be the first people on Mars. To read more about our crew, check out our <a href="geography2.html" style="color: #ff5500">Meet The Astronauts</a> page.
+                    </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Is the tour in person?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Thanks to new and upcoming technology our tour can be experienced in the comfort of your home. Our mission is to provide everyone with an experience of Mars to further educate the public on our solar system. </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does it cost?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>VR Mars is free thanks to our sponsors and donations. We encourage you to donate, so that we can continue our journey of educating people about Mars.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How long is the tour?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Each tour is 2 hours in length. However, users will also get an additional 1 hour to experience Mars on their own. Tours must be scheduled a week in advance and can be scheduled from any time of the day. </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What time will each tour start?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Each tour will start at 3:00 p.m. EST</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">When is the tour?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Our virtual tours run from November 20, 2030 to November 24, 2030. Tours must be scheduled at least a week in advance and can be scheduled from any time of the day. </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What equipment do I need?<span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Users can connect their phones to the VR headsets and simply experience the tour through screens. For optimal viewing pleasure, an oculus is recommended. In addition, VR mars is compatible with both computers and tablets. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!--Contact footer with links to different social media sites + email-->
+    <section class="footer">
+      <h4>Contact Us</h4>
+
+      <ul class="wrapper">
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span><a href="https://www.facebook.com/" target="_blank" style="color:#ff5500;"><i class="fa-brands fa-facebook-f"></i></a></span>
+          </li>
+          <li class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <span><a href="https://twitter.com/home" target="_blank" style="color:#ff5500;"><i class="fab fa-twitter"></i></a></span>
+          </li>
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><a href="https://www.instagram.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-instagram"></i></a></span>
+          </li>
+          <li class="icon github">
+            <span class="tooltip">Github</span>
+            <span><a href="https://github.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-github"></i></a></span>
+          </li>
+          <li class="icon youtube">
+            <span class="tooltip">Youtube</span>
+            <span><a href="https://www.youtube.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-youtube"></i></a></span>
+          </li>
+      </ul>
+
+      <p>Any questions? Reach out to us @ <a href="mailto: VRmars@gmail.com" target="_blank" style="color: rgb(255, 72, 0)">VRmars@gmail.com</a> </p>
+  </section>
+
+    <script type="text/javascript" src="code2.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+
+    <script>
+      window.addEventListener('scroll', function () {
+      let nav = document.querySelector('nav');
+
+      nav.classList.toggle('scrolling-active', window.scrollY > 50); //adds the class scrolling active to nav when scrollY>50
+})
+    </script>
+
+    <!--JS for light/mars mode-->
+    <script>
+
+        var icon = document.getElementById("mode-slider");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            
+        }
+
+    </script>
+
+    <script>
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+  
+        for (i = 0; i < items.length; i++) {
+            items[i].setAttribute('aria-expanded', 'false');
+        }
+  
+        if (itemToggle == 'false') {
+            this.setAttribute('aria-expanded', 'true');
+        }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+
+</body>
+</html>
+
+

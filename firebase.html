@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>The Mars Mission</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://css.gg/css?=|facebook|instagram|twitter|google" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bd60a4fe5f.js" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+        <section class="form-header">
+            
+            <!--transparent header + light/mars mode-->
+            <nav>
+                <a href="index.html"><img src="logochange.png" id="logo-text"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="eventSummary.html" id="line">EVENT SCHEDULE</a></li>
+                        <li><a href="card.html" id="line">MEET THE ASTRONAUTS</a></li>
+                        <li><a href="funFact.html" id="line">FUN FACTS</a></li>
+                        <li><a href="sources.html" id="line">SOURCES</a></li>
+                        <li><main class="main" id="book-now">
+                          <div class="btn-wrapper">
+                            <a href="firebase.html">
+                            <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                          </a>
+                          </div>
+                      </main></li>
+                    </ul>
+                </div>
+    
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                      <a href ="index.html">Home</a>
+                      <a href="eventSummary.html">Event Schedule</a>
+                      <a href="card.html">Meet the Astronauts</a>
+                      <a href="funFact.html">Fun Facts</a>
+                      <a href="sources.html">Sources</a>
+                      <div class="btn-wrapper">
+                        <a href="firebase.html">
+                        <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+    
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="openNav();">
+                  <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                  <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                  <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+    
+            </nav>
+    
+            <!--Opening page title-->
+            <div class="text-box">
+                <h1>Explore Mars With Us!</h1>
+            </div>
+
+            <!--Bobbing Arrow Animation-->
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="banner">
+                <canvas id="canvas"></canvas>
+            </div>
+        </section>
+             <!--Form to come to mars-->
+        <section class="form-container">
+            <p></p>
+            <h3>Enter the following to sign up!</h3>
+            <label for="number">What is your email? (Replace any periods with underscore. Ex: VRmars@gmail_com)</label>
+            <input type="text" placeholder="Email" name="number" id="number" required>
+            <p></p>
+            <label for="name">What is your full name?</label>
+            <input type="text" placeholder="Full Name" name="name" id="name" required>
+            <p></p>
+            <label for="name">What is your country of residence? (Optional)</label>
+            <input type="text" placeholder="Country" name="country" id="country">
+            <p></p>
+            <label for="name">What days will you be attending?</label>
+            <P></P>
+            <div id="checkcontainer">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> 
+                <label for="vehicle1">November 20, 2030 (Olympus Mons)</label><br>
+            </div>
+            <p></p>
+            <div id="checkcontainer">
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="day2"> 
+                <label for="vehicle2">November 21, 2030 (Ghost Dunes)</label><br>
+            </div>
+            <p></p>
+            <div id="checkcontainer">
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="day3"> 
+                <label for="vehicle3">November 22, 2030 (Valles Marineris)</label><br>
+            </div>
+            <p></p>
+            <div id="checkcontainer">
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="4"> 
+                <label for="vehicle4">November 23, 2030 (North + South Poles)</label><br>
+            </div>
+            <p></p>
+            <div id="checkcontainer">
+                <input type="checkbox" id="vehicle5" name="vehicle5" value="day5"> 
+                <label for="vehicle5">November 24, 2030 (Gale Crater)</label><br>
+                </div>
+            <p></p>
+            <p></p>
+            <button id = "submit" class="bouncy">Submit</button>
+            <p></p>
+        
+            
+        </section>
+
+        
+        <script type="text/javascript" src="code2.js"></script>
+        <script type="module" src="mars.js"></script>
+        
+        <!--JS for light/mars mode-->
+        <script>
+
+            var icon = document.getElementById("mode-slider");
+    
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                
+            }
+    
+        </script>
+        <script>
+            const items = document.querySelectorAll(".accordion button");
+    
+            function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+      
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+      
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+            }
+    
+            items.forEach(item => item.addEventListener('click', toggleAccordion));
+        </script>
+        <script>
+            window.addEventListener('scroll', function () {
+            let nav = document.querySelector('nav');
+      
+            nav.classList.toggle('scrolling-active', window.scrollY > 50); //adds the class scrolling active to nav when scrollY>50
+      })
+          </script>
+          <script type="text/javascript" src="menu.js"></script>
+         
+    </body>
+</html>

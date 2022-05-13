@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>The Mars Mission</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="eventSummary.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://css.gg/css?=|facebook|instagram|twitter|google" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bd60a4fe5f.js" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+        <section class="event-header">
+            
+            <!--transparent header + light/mars mode-->
+            <nav>
+                <a href="index.html"><img src="logochange.png" id="logo-text"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="eventSummary.html" id="line">EVENT SCHEDULE</a></li>
+                        <li><a href="card.html" id="line">MEET THE ASTRONAUTS</a></li>
+                        <li><a href="funFact.html" id="line">FUN FACTS</a></li>
+                        <li><a href="sources.html" id="line">SOURCES</a></li>
+                        <li><main class="main" id="book-now">
+                          <div class="btn-wrapper">
+                            <a href="firebase.html">
+                            <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                          </a>
+                          </div>
+                      </main></li>
+                    </ul>
+                </div>
+    
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                      <a href ="index.html">Home</a>
+                      <a href="eventSummary.html">Event Schedule</a>
+                      <a href="card.html">Meet the Astronauts</a>
+                      <a href="funFact.html">Fun Facts</a>
+                      <a href="sources.html">Sources</a>
+                      <div class="btn-wrapper">
+                        <a href="firebase.html">
+                        <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+    
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="openNav();">
+                  <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                  <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                  <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+    
+            </nav>
+    
+            <!--Opening page title-->
+            <div class="text-box">
+                <h1>Event Schedule</h1>
+            </div>
+
+            <!--Bobbing Arrow Animation-->
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+          
+            </div>
+
+        </section>
+
+
+<div class="container-fluid">
+    <div class="row example-basic">
+        <!-- <div class="col-md-12 example-title">
+            <h2>Schedule</h2>
+            <p>Extra small devices (phones, less than 768px)</p>
+        </div> -->
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>November 20, 2030</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Day 1 - Olympus Mons (Opening Ceremony)</h3>
+                        <p>Discover the largest known volcano in the solar system. This enormous volcano is about three times the size of the state of Arizona and three times the height of Mount Everest. Take a tour to explore the largest known volcano to mankind! This day will also be used to introduce the astronauts and their environment to participants.
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>November 21, 2030</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Day 2 - The ‘Ghost Dunes’ in Noctis Labyrinthus and Hellas basin</h3>
+                        <p>Scientists say that this region once held dunes that were tens of meters tall. Although the dunes were eventually flooded with water, the bases of the dunes still remain. These dunes give us a hint about the ancient climate of Mars. In addition, microbes may be hiding in these dunes which could indicate if life existed on Mars. Take a tour of this region to learn more about this ancient region!</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>November 22, 2030</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Day 3 - Valles Marineris</h3>
+                        <p>Valles Marineris, or Mariner Valley, is an enormous canyon system that runs along Mars' equator. Valles Marineris is 4000 km (2500 mi) long and reaches depths of up to 7 km (4 mi)! For comparison, the Grand Canyon in Arizona is about 800 km (500 mi) long and 1.6 km (1 mi) deep.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>November 23, 2030</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Day 4 - The North & South Poles</h3>
+                        <p>Similarly to Earth, Mars has two icy regions at its poles. What’s interesting about Mars’s poles is that during the winter, the north and south poles are so cold that carbon dioxide goes into the atmosphere and turns into ice that reaches the surface of Mars. Take a tour to explore the unique north and south poles of Mars!
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>November 24, 2030</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Day 5 - Gale Crater and Mount Sharp (Closing Ceremony)</h3>
+                        <p>Although this region may seem like an ordinary region on Mars, Gale Crater and Mount Sharp hold evidence of past water. Complex organic molecules and methane concentrations were found in this region which could be evidence of previous life forms. Learn more about this region to understand how Mars may have once had life!
+                        This day will unfortunately be the last day of the event. Participants will receive a Mars certificate and say good-bye to the Mars astronaut crew.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+        <!-- <div class="container">
+            <div class = "timeline">
+                <div class = "line"></div>
+                <div class = "section">
+                    <div class = "bead"></div>
+                    <div class = "content">
+                        <h2>Day 1 - Olympus Mons</h2>
+                        <p>
+                            Discover the largest known volcano in the solar system. This enormous volcano is about three times the size of the state of Arizona and three times the height of Mount Everest. Take a tour to explore the largest known volcano to mankind! 
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "section">
+                    <div class = "bead"></div>
+                    <div class = "content">
+                        <h2>Day 2 - Ghost Dunes</h2>
+                        <p>
+                            Scientists say that this region once held dunes that were tens of meters tall. Although the dunes were eventually flooded with water, the bases of the dunes still remain. These dunes give us a hint about the ancient climate of Mars. In addition, microbes may be hiding in these dunes which could indicate if life existed on Mars. Take a tour of this region to learn more about this ancient region! 
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "section">
+                    <div class = "bead"></div>
+                    <div class = "content">
+                        <h2>Day 3 - Valles Marineris</h2>
+                        <p>
+                            Explore the largest known canyon in the solar system. This volcano is 1850 miles long which is about four times the size of the Grand Canyon. Take a tour to explore the largest known canyon to mankind!  
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "section">
+                    <div class = "bead"></div>
+                    <div class = "content">
+                        <h2>Day 4 - North & South Poles</h2>
+                        <p>
+                            Similarly to Earth, Mars has two icy regions at its poles. What’s interesting about Mars’s poles is that during the winter, the north and south poles are so cold that carbon dioxide goes into the atmosphere and turns into ice that reaches the surface of Mars. Take a tour to explore the unique north and south poles of Mars!
+ 
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "section">
+                    <div class = "bead"></div>
+                    <div class = "content">
+                        <h2>Day 5 - Gale Crater & Mount Sharp</h2>
+                        <p>
+                            Although this region may seem like an ordinary region on Mars, Gale Crater and Mount Sharp hold evidence of past water. Complex organic molecules and methane concentrations were found in this region which could be evidence of previous life forms. Learn more about this region to understand how Mars may have once had life!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+        <!--Contacts + Email-->
+        <section class="footer">
+            <h4>Contact Us</h4>
+    
+            <ul class="wrapper">
+                <li class="icon facebook">
+                  <span class="tooltip">Facebook</span>
+                  <span><a href="https://www.facebook.com/" target="_blank" style="color:#ff5500;"><i class="fa-brands fa-facebook-f"></i></a></span>
+                </li>
+                <li class="icon twitter">
+                  <span class="tooltip">Twitter</span>
+                  <span><a href="https://twitter.com/home" target="_blank" style="color:#ff5500;"><i class="fab fa-twitter"></i></a></span>
+                </li>
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <span><a href="https://www.instagram.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-instagram"></i></a></span>
+                </li>
+                <li class="icon github">
+                  <span class="tooltip">Github</span>
+                  <span><a href="https://github.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-github"></i></a></span>
+                </li>
+                <li class="icon youtube">
+                  <span class="tooltip">Youtube</span>
+                  <span><a href="https://www.youtube.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-youtube"></i></a></span>
+                </li>
+            </ul>
+    
+            <p>Any questions? Reach out to us @ <a href="mailto: VRmars@gmail.com" target="_blank" style="color: rgb(255, 72, 0)">VRmars@gmail.com</a> </p>
+        </section>
+
+        <script type="text/javascript" src="code2.js"></script>
+        <script type="text/javascript" src="timeline.js"></script>
+        <script>
+            const items = document.querySelectorAll(".accordion button");
+    
+            function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+      
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+      
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+            }
+    
+            items.forEach(item => item.addEventListener('click', toggleAccordion));
+        </script>
+        <script>
+            window.addEventListener('scroll', function () {
+            let nav = document.querySelector('nav');
+      
+            nav.classList.toggle('scrolling-active', window.scrollY > 50); //adds the class scrolling active to nav when scrollY>50
+      })
+          </script>
+          <script type="text/javascript" src="menu.js"></script>
+
+    </body>
+</html>

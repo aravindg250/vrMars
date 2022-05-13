@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>The Mars Mission</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="card.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://css.gg/css?=|facebook|instagram|twitter|google" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bd60a4fe5f.js" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+        <section class="geo-header">
+            
+            <!--transparent header + light/mars mode-->
+            <nav>
+              <a href="index.html"><img src="logochange.png" id="logo-text"></a>
+              <div class="nav-links">
+                  <ul>
+                    <li><a href="eventSummary.html" id="line">EVENT SCHEDULE</a></li>
+                    <li><a href="card.html" id="line">MEET THE ASTRONAUTS</a></li>
+                    <li><a href="funFact.html" id="line">FUN FACTS</a></li>
+                    <li><a href="sources.html" id="line">SOURCES</a></li>
+                      <li><main class="main" id="book-now">
+                        <div class="btn-wrapper">
+                          <a href="firebase.html">
+                          <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                        </a>
+                        </div>
+                    </main></li>
+                  </ul>
+              </div>
+  
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                  <a href ="index.html">Home</a>
+                  <a href="eventSummary.html">Event Schedule</a>
+                  <a href="card.html">Meet the Astronauts</a>
+                  <a href="funFact.html">Fun Facts</a>
+                  <a href="sources.html">Sources</a>
+                  <div class="btn-wrapper">
+                    <a href="firebase.html">
+                    <button class="btn-3d-cube-2"><span class="btn btn-border" data-hover="SIGN UP">REGISTER</span></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="openNav();">
+                <path
+                      class="line top"
+                      d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                      class="line middle"
+                      d="m 30,50 h 40" />
+                <path
+                      class="line bottom"
+                      d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+              </svg>
+  
+          </nav>
+    
+            <!--Opening page title-->
+            <div class="text-box">
+                <h1>Meet Our Astronauts</h1>
+            </div>
+
+            <!--Bobbing Arrow Animation-->
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </section>
+        
+        <!--Territories-->
+        <section class="cardback">
+        <section class="profile">  
+            <div class="card7" data-state="#about">
+              <div class="card7-header">
+                <div class="card7-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
+                <img class="card7-avatar" src="vib.png" alt="avatar" />
+                <h1 class="card7-fullname">Vibhav Gaka</h1>
+                <h2 class="card7-jobtitle">Captain/Pilot</h2>
+              </div>
+          <div class="card7-main">
+            <div class="card7-section is-active" id="about7">
+              <div class="card7-content">
+                <div class="card7-subtitle">ABOUT</div>
+                <p class="card7-desc">This is his second mission, and he is the glue of the crew. Vibhav captains the ship and keeps each crew member in order.
+                </p>
+              </div>
+              <div class="card7-social">
+                <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+                <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                    <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                    <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+                <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+              </div>
+            </div>
+            <div class="card7-section" id="experience7">
+              <div class="card7-content">
+                <div class="card7-subtitle">WORK EXPERIENCE</div>
+                <div class="card7-timeline">
+                  <div class="card7-item" data-year="2015">
+                    <div class="card7-item-title">Masters at <span>UT Austin</span></div>
+                    <div class="card7-item-desc">Majored in aerospace engineering</div>
+                  </div>
+                  <div class="card7-item" data-year="2022">
+                    <div class="card7-item-title">Helped construct aircraft at Boeing</div>
+                    <div class="card7-item-desc">Developed improved turbines and pilot controls</div>
+                  </div>
+                  <div class="card7-item" data-year="2027">
+                    <div class="card7-item-title">Lived in ISS for 6 months</div>
+                    <div class="card7-item-desc">Conducted research for NASA</div>
+                  </div>
+                  <div class="card7-item" data-year="2030">
+                    <div class="card7-item-title">Captain of Mars Mission</div>
+                    <div class="card7-item-desc">Chosen to lead the expedition on Mars</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card7-section" id="contact7">
+              <div class="card7-content">
+                <div class="card7-subtitle">AGENT CONTACT</div>
+                <div class="card7-contact-wrapper">
+                  <div class="card7-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" /></svg>
+                    Elk Rd, Dallas, TX, 49128
+                  </div>
+                  <div class="card7-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(269) 756-9809
+                  </div>
+                  <div class="card7-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <path d="M22 6l-10 7L2 6" /></svg>
+                    gakaAgent@expedition.com
+                  </div>
+                  <button class="contact-me">Contact My Agent</button>
+                </div>
+              </div>
+            </div>
+            <div class="card7-buttons">
+              <button data-section="#about7" class="is-active">ABOUT</button>
+              <button data-section="#experience7">EXPERIENCE</button>
+              <button data-section="#contact7">CONTACT</button>
+            </div>
+          </div>
+        </div>
+      
+        
+        <div class="card2" data-state="#about">
+          <div class="card2-header">
+            <div class="card2-cover" style="background-image: url(Mars_water.jpg)"></div>
+            <img class="card2-avatar" src="goat.png" alt="avatar" />
+            <h1 class="card2-fullname">Advait Sepuri</h1>
+            <h2 class="card2-jobtitle">Engineer</h2>
+        </div>
+      <div class="card2-main">
+        <div class="card2-section is-active" id="about2">
+          <div class="card2-content">
+            <div class="card2-subtitle">ABOUT</div>
+            <p class="card2-desc">Advait has over 11 years of experience as an engineer. He fixes the ship so that users can return to Earth safely. 
+            </p>
+          </div>
+          <div class="card2-social">
+            <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+            <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+            <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+          </div>
+        </div>
+        <div class="card2-section" id="experience2">
+          <div class="card2-content">
+            <div class="card2-subtitle">WORK EXPERIENCE</div>
+            <div class="card2-timeline">
+              <div class="card2-item" data-year="2019">
+                <div class="card2-item-title">Masters at <span>University of Virginia</span></div>
+                <div class="card2-item-desc">Studied mechanical and electrical engineering.</div>
+              </div>
+              <div class="card2-item" data-year="2023">
+                <div class="card2-item-title">Mechanical Engineer at <span>NASA</span></div>
+                <div class="card2-item-desc">Worked on aircraft exterior.</div>
+              </div>
+              <div class="card2-item" data-year="2027">
+                <div class="card2-item-title">Hardware Developer <span>Lockheed Martin</span></div>
+                <div class="card2-item-desc">Developed micro-circuits</div>
+              </div>
+              <div class="card2-item" data-year="2030">
+                <div class="card2-item-title">Engineer of Mars Mission</div>
+                <div class="card2-item-desc">On-board mech/electrician</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card2-section" id="contact2">
+          <div class="card2-content">
+            <div class="card2-subtitle">AGENT CONTACT</div>
+            <div class="card2-contact-wrapper">
+              <div class="card2-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" /></svg>
+                Deer Dr, Richmond, VA, 98745
+              </div>
+              <div class="card2-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(923) 423-9242
+              </div>
+              <div class="card2-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="M22 6l-10 7L2 6" /></svg>
+                sepuriAgent@expedition.com
+              </div>
+              <button class="contact-me">Contact My Agent</button>
+            </div>
+          </div>
+        </div>
+        <div class="card2-buttons">
+          <button data-section="#about2" class="is-active">ABOUT</button>
+          <button data-section="#experience2">EXPERIENCE</button>
+          <button data-section="#contact2">CONTACT</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="card3" data-state="#about">
+        <div class="card3-header">
+          <div class="card3-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
+          <img class="card3-avatar" src="dip.png" alt="avatar" />
+          <h1 class="card3-fullname">Dipanshu Verma</h1>
+          <h2 class="card3-jobtitle">Medical Specialist</h2>
+      </div>
+      <div class="card3-main">
+      <div class="card3-section is-active" id="about3">
+        <div class="card3-content">
+          <div class="card3-subtitle">ABOUT</div>
+          <p class="card3-desc">Dipanshu has over 9 years of experience as a medical professional. He maintains crew health and treats medical emergencies. 
+          </p>
+        </div>
+        <div class="card3-social">
+          <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+          <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+              <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+              <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+        </div>
+      </div>
+      <div class="card3-section" id="experience3">
+        <div class="card3-content">
+          <div class="card3-subtitle">WORK EXPERIENCE</div>
+          <div class="card3-timeline">
+            <div class="card3-item" data-year="2021">
+              <div class="card3-item-title">Masters at UNC</div>
+              <div class="card3-item-desc">Attended Med School</div>
+            </div>
+            <div class="card3-item" data-year="2022">
+              <div class="card3-item-title">Researcher at Coriell Institute</div>
+              <div class="card3-item-desc">Conducted biomedical research.</div>
+            </div>
+            <div class="card3-item" data-year="2026">
+              <div class="card3-item-title">Became an Independent Researcher</div>
+              <div class="card3-item-desc">Independent researcher in France.</div>
+            </div>
+            <div class="card3-item" data-year="2030">
+              <div class="card3-item-title">Official Medic of Expedition Mars</div>
+              <div class="card3-item-desc">Maintains crew health and handles medical emergencies.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card3-section" id="contact3">
+        <div class="card3-content">
+          <div class="card3-subtitle">AGENT CONTACT</div>
+          <div class="card3-contact-wrapper">
+            <div class="card3-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" /></svg>
+              Fawn Rd, Charlotte, NC, 28973
+            </div>
+            <div class="card3-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(263) 536-5833
+            </div>
+            <div class="card3-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <path d="M22 6l-10 7L2 6" /></svg>
+              vergmaAgent@expedition.com
+            </div>
+            <button class="contact-me">Contact my Agent</button>
+          </div>
+        </div>
+      </div>
+      <div class="card3-buttons">
+        <button data-section="#about3" class="is-active">ABOUT</button>
+        <button data-section="#experience3">EXPERIENCE</button>
+        <button data-section="#contact3">CONTACT</button>
+      </div>
+      </div>
+      </div>
+    </section>
+        
+        <section class="profile">  
+          <div class="card4" data-state="#about">
+            <div class="card4-header">
+              <div class="card4-cover" style="background-image: url(Mars_water.jpg)"></div>
+              <img class="card4-avatar" src="arav.png" alt="avatar" />
+              <h1 class="card4-fullname">Aravind Gunasekaran</h1>
+              <h2 class="card4-jobtitle">Agricultural Specialist/Chef</h2>
+            </div>
+        <div class="card4-main">
+          <div class="card4-section is-active" id="about4">
+            <div class="card4-content">
+              <div class="card4-subtitle">ABOUT</div>
+              <p class="card4-desc">Aravind has over 10 years of experience in his field. He grows crops and provides nutritious meals for the whole crew. 
+              </p>
+            </div>
+            <div class="card4-social">
+              <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+              <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                  <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                  <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+              <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+            </div>
+          </div>
+          <div class="card4-section" id="experience4">
+            <div class="card4-content">
+              <div class="card4-subtitle">WORK EXPERIENCE</div>
+              <div class="card4-timeline">
+                <div class="card4-item" data-year="2020">
+                  <div class="card4-item-title">Bachelor's at Purdue</div>
+                  <div class="card4-item-desc">Studied the Culinary Arts</div>
+                </div>
+                <div class="card4-item" data-year="2023">
+                  <div class="card4-item-title">Agricultural Engineer for Cargill</div>
+                  <div class="card4-item-desc">Made eco-friendly farming tools.</div>
+                </div>
+                <div class="card4-item" data-year="2025">
+                  <div class="card4-item-title">Created Gunasekaran Foods</div>
+                  <div class="card4-item-desc">Founded fuel-efficient food company.</div>
+                </div>
+                <div class="card4-item" data-year="2030">
+                  <div class="card4-item-title">Agricultural Specialist for Mars Mission</div>
+                  <div class="card4-item-desc">Grows crops and cooks meals for crew.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card4-section" id="contact4">
+            <div class="card4-content">
+              <div class="card4-subtitle">AGENT CONTACT</div>
+              <div class="card4-contact-wrapper">
+                <div class="card4-contact">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" /></svg>
+                  Buck Rd, Indianapolis, IN, 92942
+                </div>
+                <div class="card4-contact">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(622) 733-9373
+                </div>
+                <div class="card4-contact">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <path d="M22 6l-10 7L2 6" /></svg>
+                  gunasekaranAgent@expedition.com
+                </div>
+                <button class="contact-me">Contact my Agent</button>
+              </div>
+            </div>
+          </div>
+          <div class="card4-buttons">
+            <button data-section="#about4" class="is-active">ABOUT</button>
+            <button data-section="#experience4">EXPERIENCE</button>
+            <button data-section="#contact4">CONTACT</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card5" data-state="#about">
+        <div class="card5-header">
+          <div class="card5-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
+          <img class="card5-avatar" src="gaurav.png" alt="avatar" />
+          <h1 class="card5-fullname">Gaurav Koratagere</h1>
+          <h2 class="card5-jobtitle">Communications Specialist</h2>
+      </div>
+      <div class="card5-main">
+      <div class="card5-section is-active" id="about5">
+        <div class="card5-content">
+          <div class="card5-subtitle">ABOUT</div>
+          <p class="card5-desc">Gaurav has over 8 years of experience in his field. He communicates with mission control & documents activities on Mars.
+          </p>
+        </div>
+        <div class="card5-social">
+          <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+          <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+              <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+              <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+        </div>
+      </div>
+      <div class="card5-section" id="experience5">
+        <div class="card5-content">
+          <div class="card5-subtitle">WORK EXPERIENCE</div>
+          <div class="card5-timeline">
+            <div class="card5-item" data-year="2022">
+              <div class="card5-item-title">Bachelor's at NorthWestern</div>
+              <div class="card5-item-desc">Studied electrical engineering.</div>
+            </div>
+            <div class="card5-item" data-year="2023">
+              <div class="card5-item-title">Hardware Engineer at Oracle</div>
+              <div class="card5-item-desc">Developed communication hardware.</div>
+            </div>
+            <div class="card5-item" data-year="2028">
+              <div class="card5-item-title">Director of Engineering at AT&T</div>
+              <div class="card5-item-desc">Worked on 6G technology</div>
+            </div>
+            <div class="card5-item" data-year="2030">
+              <div class="card5-item-title">Communications Specialist for Mars Mission</div>
+              <div class="card5-item-desc">Communicates with mision control and documents events.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card5-section" id="contact5">
+        <div class="card5-content">
+          <div class="card5-subtitle">AGENT CONTACT</div>
+          <div class="card5-contact-wrapper">
+            <div class="card5-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" /></svg>
+              Sheep Rd, Chicago, IL, 49128
+            </div>
+            <div class="card5-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(269) 756-9809
+            </div>
+            <div class="card5-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <path d="M22 6l-10 7L2 6" /></svg>
+              koratagereAgent@expedition.com
+            </div>
+            <button class="contact-me">Contact my Agent</button>
+          </div>
+        </div>
+      </div>
+      <div class="card5-buttons">
+        <button data-section="#about5" class="is-active">ABOUT</button>
+        <button data-section="#experience5">EXPERIENCE</button>
+        <button data-section="#contact5">CONTACT</button>
+      </div>
+      </div>
+      </div>
+      <div class="card6" data-state="#about">
+      <div class="card6-header">
+        <div class="card6-cover" style="background-image: url(Mars_water.jpg)"></div>
+        <img class="card6-avatar" src="astropathy.png" alt="avatar" />
+        <h1 class="card6-fullname">Ayush Pathy</h1>
+        <h2 class="card6-jobtitle">Energy Specialist</h2>
+      </div>
+      <div class="card6-main">
+      <div class="card6-section is-active" id="about6">
+      <div class="card6-content">
+        <div class="card6-subtitle">ABOUT</div>
+        <p class="card6-desc">Ayush Pathy has 9 years of experience in his field. He is in charge of converting waste into fertilizer and biofuel.
+        </p>
+      </div>
+      <div class="card6-social">
+        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+        <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+            <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+            <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+      </div>
+      </div>
+      <div class="card6-section" id="experience6">
+      <div class="card6-content">
+        <div class="card6-subtitle">WORK EXPERIENCE</div>
+        <div class="card6-timeline">
+          <div class="card6-item" data-year="2021">
+            <div class="card6-item-title">Bachelor's at USC</div>
+            <div class="card6-item-desc">Studied environmental engineering.</div>
+          </div>
+          <div class="card6-item" data-year="2022">
+            <div class="card6-item-title">Engineer at Atlantic Energy</div>
+            <div class="card6-item-desc">Developed efficient hydroelectric energy.</div>
+          </div>
+          <div class="card6-item" data-year="2027">
+            <div class="card6-item-title">Energy Alternative Researcher</div>
+            <div class="card6-item-desc">Made biofuel-powered mechanisms.</div>
+          </div>
+          <div class="card6-item" data-year="2030">
+            <div class="card6-item-title">Energy Specialist on Mars Mission</div>
+            <div class="card6-item-desc">Repurposes waste for fertilizer and biofuel.</div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="card6-section" id="contact6">
+      <div class="card6-content">
+        <div class="card6-subtitle">AGENT CONTACT</div>
+        <div class="card6-contact-wrapper">
+          <div class="card6-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" /></svg>
+            Ram Dr., Los Angeles, CA, 75203
+          </div>
+          <div class="card6-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(232) 325-6242
+          </div>
+          <div class="card6-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <path d="M22 6l-10 7L2 6" /></svg>
+            pathyAgent@expedition.com
+          </div>
+          <button class="contact-me">Contact my Agent</button>
+        </div>
+      </div>
+      </div>
+      <div class="card6-buttons">
+      <button data-section="#about6" class="is-active">ABOUT</button>
+      <button data-section="#experience6">EXPERIENCE</button>
+      <button data-section="#contact6">CONTACT</button>
+      </div>
+      </div>
+      </div>
+      
+      
+      </section>
+
+      <section class="footer">
+        <h4>Contact Us</h4>
+
+        <ul class="wrapper">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><a href="https://www.facebook.com/" target="_blank" style="color:#ff5500;"><i class="fa-brands fa-facebook-f"></i></a></span>
+            </li>
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><a href="https://twitter.com/home" target="_blank" style="color:#ff5500;"><i class="fab fa-twitter"></i></a></span>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><a href="https://www.instagram.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-instagram"></i></a></span>
+            </li>
+            <li class="icon github">
+              <span class="tooltip">Github</span>
+              <span><a href="https://github.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-github"></i></a></span>
+            </li>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><a href="https://www.youtube.com/" target="_blank" style="color:#ff5500;"><i class="fab fa-youtube"></i></a></span>
+            </li>
+        </ul>
+
+        <p>Any questions? Reach out to us @ <a href="mailto: VRmars@gmail.com" target="_blank" style="color: rgb(255, 72, 0)">VRmars@gmail.com</a> </p>
+    </section>
+    </section>
+      <script type="text/javascript" src="card.js"></script>
+      <script type="text/javascript" src="code2.js"></script>
+
+    <script>
+      window.addEventListener('scroll', function () {
+      let nav = document.querySelector('nav');
+
+      nav.classList.toggle('scrolling-active', window.scrollY > 50); //adds the class scrolling active to nav when scrollY>50
+})
+    </script>
+
+    <!--JS for light/mars mode-->
+    <script>
+
+        var icon = document.getElementById("mode-slider");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            
+        }
+
+    </script>
+
+    <script>
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+  
+        for (i = 0; i < items.length; i++) {
+            items[i].setAttribute('aria-expanded', 'false');
+        }
+  
+        if (itemToggle == 'false') {
+            this.setAttribute('aria-expanded', 'true');
+        }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+    <script type="text/javascript" src="menu.js"></script>
+
+    </body>
+</html>
