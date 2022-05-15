@@ -4,6 +4,7 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>The Mars Mission</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
@@ -84,62 +85,13 @@
         </div>
     </section>
 
-    <section class="scroll-reveal box eventDes scrollTo">
+    <section class="scroll-reveal box left eventDes scrollTo">
       <h1>What is VR Mars?</h1>
       <ul>
         <li><i class="fa-light fa-rocket-launch"></i> VR Mars is an event where the people of Earth can experience Mars through live virtual reality.</li>
         <li><i class="fa-light fa-rocket-launch"></i> In this tour you will get an immersive experience and will be able to see the surface of Mars as well as notable landmarks.</li>
         <li><i class="fa-light fa-rocket-launch"></i> Our knowledgeable astronaut crew will also explain their daily routines and show you around their base so you will be able to experience the red planet from the comfort of your home.</li>
       </ul>
-      <style>
-        .box
-        {    
-          transition: transform 0.5s, opacity 0.5s;
-          transform: translateX(-200px);
-          opacity: 0;
-        }
-        .box.active{
-         transform: translateX(0);
-         opacity: 1;
-          }
-      </style>
-      
-      <script>
-              function scrollTrigger(selector, options = {}){
-                  let els = document.querySelectorAll(selector)
-                  els = Array.from(els)
-                  els.forEach(el => {
-                      addObserver(el, options)
-                  })
-              }
-
-              function addObserver(el, options){
-                  if(!('IntersectionObserver' in window)){
-                      if(options.cb){
-                          options.cb(el)
-                      }else{
-                          entry.target.classList.add('active')
-                      }
-                      return
-                  }
-                  let observer = new IntersectionObserver((entries, observer) => { //this takes a callback function which receives two arguments: the elemts list and the observer instance
-                      entries.forEach(entry => {
-                          if(entry.isIntersecting){
-                              if(options.cb){
-                                  options.cb(el)
-                              }else{
-                                  entry.target.classList.add('active')
-                              }
-                              observer.unobserve(entry.target)
-                          }
-                      })
-                  }, options)
-                  observer.observe(el)
-              }
-              scrollTrigger('.scroll-reveal', {
-                  rootMargin: '-200px',
-              })
-            </script>
     </section>
 
     <!--Destinations-->
@@ -328,6 +280,7 @@
     <script type="text/javascript" src="js/menu.js"></script>
     <script src="//code.tidio.co/jlkddbwuhfql2echqwaxzlrd9lo5wifo.js" async></script>
 
+    <script type="text/javascript" src="js/animation.js"></script>
 
     <script>
       window.addEventListener('scroll', function () {
