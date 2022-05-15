@@ -44,12 +44,13 @@ body{
 /*nav bar css*/
 nav {
     display: flex;
-    padding: 0% 6%;
+    padding: 0% 5%;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 9999;
+    
 }
 nav img {
     width: 75px;
@@ -67,7 +68,7 @@ nav img {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 2%;
+    padding: 13px 2%;
     position: relative;
     
 }
@@ -93,7 +94,7 @@ nav img {
 
 /* Mars mode color change */
 :root {
-    --primary-color: rgb(8, 8, 8);
+    --primary-color: rgb(10, 10, 10);
     --secondary-color: white;
     --tertiary-color: white;
     --quartery-color: #ff5500;
@@ -169,7 +170,7 @@ nav img {
 
 /*Additional styling for the nav bar when scrolling*/
 .scrolling-active{
-    background-color: var(--primary-color);
+    background-image: linear-gradient(to right, black , rgb(85, 85, 85));;
     box-shadow: 0 3px 1rem rgba(0,0,0,.1);
     z-index: 1;
     transition-property: background-color;
@@ -257,6 +258,7 @@ p {
     display: flex;
     justify-content: space-between;
     background: var(--primary-color);
+
 }
 .course-col {
     flex-basis: 31%;
@@ -379,6 +381,7 @@ h3 {
     text-align: center;
     background: var(--primary-color);
     
+    
 }
 .testimonials h1 {
     color: var(--secondary-color);
@@ -402,6 +405,8 @@ h3 {
     margin-left: 5px;
     margin-right: 30px;
     border-radius: 50%;
+    border: white;
+
 }
 .testimonial-col p {
     padding: 0;
