@@ -984,7 +984,7 @@ color: var(--secondary-color);
 /* Style the back side of circle3a */
 .circle3a-back {
     border: 3px solid #780E0E;
-    background-image: url(../img/mars-atmosphere2.jpg);
+    background-image: url(../img/gases.jpg);
     background-size: cover;
     color: white;
     transform: rotateY(180deg);
@@ -1207,7 +1207,7 @@ color: var(--secondary-color);
 /* Style the front side 5a */
 .circle5a-front {
     border: 3px solid #780E0E;
-    background-image: url(../img/mars-paradise.jpg);
+    background-image: url(../img/terraforming.jpg);
     background-size: cover;
     background-position: 45% 10%;
     background-repeat: no-repeat;
@@ -1268,7 +1268,7 @@ color: var(--secondary-color);
 /* Style the front side 5b */
 .circle5b-front {
     border: 3px solid #780E0E;
-    background-image: url(../img/mars-homes.jpg);
+    background-image: url(../img/tech.jpg);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
