@@ -1181,6 +1181,7 @@ color: var(--secondary-color);
     left: 50%;
     top: 7%;
     perspective: 1000px; 
+    
 }
 /* Position the front and back side of circle5aa */
 .circle5a-inner {
