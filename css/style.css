@@ -391,10 +391,10 @@ h3 {
 }
 .testimonial-col{
     flex-basis: 44%;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-bottom: 5%;
     text-align: left;
-    background: var(--primary-color);
+    background: rgba(255, 255, 255, 0.15);
     padding: 25px;
     cursor: pointer;
     display: flex;
